@@ -1,0 +1,54 @@
+
+<div class="mainHeader">
+    <div class="container-fluid appHeader">
+        <div class="row">
+
+            <div class="headerMiniMenu col-2 col-sm-2">
+                <i aria-hidden="true" *ngIf="!showMobileMenu" (click)="showMobileMenu = !showMobileMenu"
+                    class="ri-menu-2-line"></i>
+                <span *ngIf="showMobileMenu" (click)="showMobileMenu = !showMobileMenu"
+                    class="book-close headerMenuMobileCloseIcon"></span>
+            </div>
+            <div class="logowrapper col-5 col-sm-5 col-md-3 col-lg-3 col-xl-3">
+                <img class="animated fadeInDown headerLogo" alt="logo" src="assets/logo.jpg" (click)="openClient()" />
+            </div>
+
+            <div class="banner-header" id="banner-header"
+                style="background: url('assets/bannerImage.jpg') no-repeat center center , #bcbcbc">
+        </div>
+        </div>
+    </div>
+    <div class="container-fluid left-margin">
+        <div class="row">
+          <div class="col-xl-12">
+            <h2>
+              {{ 'AVAILABLE PRODUCTS ' }}
+              <span class="offers-total-count">({{6}})</span>
+            </h2>
+          </div>
+    </div>
+
+    <mat-grid-list cols=3 #grid rowHeight="315px" gutterSize="15px">
+        <mat-grid-tile *ngFor="let product of products">
+            
+          <mat-card class="offersCard animated" (click)="viewDetails(product)" >
+            <img mat-card-image class ="image-height" alt="products" src="assets/product1.jpg">
+            <div class="viewDetail">
+                <span>{{ 'Details' }}</span>
+            </div>
+            <mat-card-title>
+              Title
+            </mat-card-title>
+            <mat-card-content>
+                <p>
+                    The Small Description about the product.
+                  </p>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+</div>
+
+
+
+

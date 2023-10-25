@@ -63,6 +63,35 @@
   }
 }
 
+.loginBtn{
+  position: absolute;
+  top: 30px;
+  right: 160px;
+  height: 37px;
+  box-sizing: border-box;
+  min-width: 60px;
+  padding: 0 16px;
+  border-radius: 4px;
+  background-color: #393ac0;
+  color: white;
+  cursor: pointer;
+}
+
+.contactBtn{
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  height: 37px;
+  box-sizing: border-box;
+  min-width: 60px;
+  padding: 0 16px;
+  border-radius: 4px;
+  background-color: #393ac0;
+  color: white;
+  cursor: pointer;
+}
+
+
 .viewDetail {
   display: none;
   width: 100%;

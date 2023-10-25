@@ -3,6 +3,7 @@ import { ThemePalette } from '@angular/material/core';
 import { ProgressBarMode } from '@angular/material/progress-bar';
 import { MatDialog } from '@angular/material/dialog';
 import { ProductComponent } from '../product/product.component';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -12,6 +13,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     public dialog: MatDialog,
+    public router: Router
   ) { }
 
   ngOnInit(): void {
@@ -32,6 +34,14 @@ export class HeaderComponent implements OnInit {
     
   }
 
+  openAbout(){
+    this.router.navigate(['/About']);
+  }
+
+  openContact(){
+
+  }
+
   viewDetails(product : any) {
     console.log('The dialog was closed');
     const dialogRef = this.dialog.open(ProductComponent, {
@@ -45,5 +55,8 @@ export class HeaderComponent implements OnInit {
       console.log('The dialog was closed');
     });
   }
+
+
+  
 
 }

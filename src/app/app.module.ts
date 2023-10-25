@@ -14,12 +14,14 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ProductComponent
+    ProductComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

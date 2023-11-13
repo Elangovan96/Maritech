@@ -1,62 +1,120 @@
-
-<div class="mainHeader">
-    <div class="container-fluid appHeader">
-        <div class="row">
-
-            <div class="headerMiniMenu col-2 col-sm-2">
-                <i aria-hidden="true" *ngIf="!showMobileMenu" (click)="showMobileMenu = !showMobileMenu"
-                    class="ri-menu-2-line"></i>
-                <span *ngIf="showMobileMenu" (click)="showMobileMenu = !showMobileMenu"
-                    class="book-close headerMenuMobileCloseIcon"></span>
-            </div>
-            <div class="logowrapper col-5 col-sm-5 col-md-3 col-lg-3 col-xl-3">
-                <img class="animated fadeInDown headerLogo" alt="logo" src="assets/logo.jpg" (click)="openClient()" />
-                <div style="display: inline-block">
-                <button mat-raised-button color="primary" class="loginBtn" style="margin-left: 8px" (click)="openAbout()">
-                  <span class="login-btn-text">{{ 'About Us' }} </span>
-                </button>
-                <button mat-raised-button color="primary" class="contactBtn" style="margin-left: 8px" (click)="openContact()">
-                  <span class="login-btn-text">{{ 'Contact Us' }} </span>
-                </button>
-              </div>
-            
-          </div>
-            <div class="banner-header" id="banner-header"
-                style="background: url('assets/bannerImage.jpg') no-repeat center center , #bcbcbc">
-        </div>
-        </div>
+<div [ngClass]="{ 'add-blur' : blurData }">
+  <div class="container-fluid appHeader">
+    <div class="banner-header" id="banner-header"
+      style="background: url('assets/bannerImage.jpg') no-repeat center center , #bcbcbc">
     </div>
-    <div class="container-fluid left-margin">
+    <div class="logowrapper col-5 col-sm-5 col-md-3 col-lg-3 col-xl-3">
+      <img class="animated fadeInDown headerLogo" alt="logo" src="assets/logo.png" (click)="openClient()" />
+    </div>
+      <div class="container-fluid headerSubMenu">
         <div class="row">
           <div class="col-xl-12">
-            <h2>
-              {{ 'AVAILABLE PRODUCTS ' }}
-              <span class="offers-total-count">({{6}})</span>
-            </h2>
+            <div style="text-align: center">
+              <div class="animated fadeInDown">
+                <div class="menuItem">
+                  <h4 (click)="openAbout()">
+                    <a style="letter-spacing: 1px;font-weight: 500;" class="fa fa-certificate" aria-hidden="true">
+                      <span style="margin-right: 5px"> </span>
+                       WHO WE ARE
+                    </a>
+                  </h4>
+                </div>
+                <div class="menuItem">
+                  <h4 (click)="openCertificate()">
+                    <a style="letter-spacing: 1px;font-weight: 500;" class="fa fa-certificate" aria-hidden="true">
+                      <span style="margin-right: 5px"> </span>
+                       CERTIFICATES
+                    </a>
+                  </h4>
+                </div>
+                <div class="menuItem">
+                  <h4 (click)="openContact()">
+                    <a style="letter-spacing: 1px;font-weight: 500;" class="fa fa-certificate" aria-hidden="true">
+                      <span style="margin-right: 5px"> </span>
+                       CONTACT US
+                    </a>
+                  </h4>
+                </div>
+                <hr>
+              </div>
+            </div>
           </div>
+        </div>
+        <h2 class="mat-body-strong" style="font-style: italic bold;text-align: center;">ABOUT US</h2>
+      </div>
+
+      <div class="container-data">
+        <img class="animated fadeInDown aboutDAta" alt="About" src="assets/About.png" (click)="openClient()" /> 
+        <div class="text">
+          <h3 class="mat-body-strong" style="text-align: left">Melba biotech is a company owned and operated by experienced aquaculture
+            professionals with more than 30 years of experience in aquaculture, aquatic
+            animal, health care products and services.</h3>
+            <h3 class="mat-body-strong" style="text-align: left">Synergic association between aquaculture professionals and biotechnology
+              expects has emerged in launching MELBA Biotech as a value added and state of
+              the art solution and service provided for aquaculture including shrimp and fish.</h3>
+          <br>
+        </div> 
+      </div>
+      <hr>
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid left-margin">
+    <div class="row">
+      <div class="col-xl-12" style="text-align:center">
+        <h2>
+          {{ ' PRODUCTS ' }}
+        </h2>
+      </div>
     </div>
 
-    <mat-grid-list cols=3 #grid rowHeight="315px" gutterSize="15px">
-        <mat-grid-tile *ngFor="let product of products">
-            
-          <mat-card class="offersCard animated" (click)="viewDetails(product)" >
-            <img mat-card-image class ="image-height" alt="products" src="assets/product1.jpg">
-            <div class="viewDetail">
-                <span>{{ 'Details' }}</span>
+    <mat-grid-list cols=3 #grid rowHeight="430px" gutterSize="15px">
+      <mat-grid-tile *ngFor="let product of products">
+
+        <mat-card class="offersCard animated" (click)="viewDetails(product)">
+          <img mat-card-image class="image-height" alt="products" src="{{product.image}}">
+          <mat-card-title style="font-style: inherit;font-size: large;">
+            {{product.title}}
+          </mat-card-title>
+          <mat-card-content>
+            <span> Dosage : </span>
+            <span style="font-weight: 500;">{{ product.dosage }} </span>
+            <br>
+            <span> Net Weight : </span>
+            <span style="font-weight: 500;"> {{ product.netWeight }} </span>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <br>
+  <div class="footer-main">
+    <div class="ng-star-inserted">
+      <!---->
+      <nav class="navbar navbar-default book-footer navbar-fixed-bottom ng-star-inserted" id="footerItem"
+        role="navigation">
+        <div class="container-fluid">
+          <div class="row rowfullwidth">
+            <div class="col-xs-12 col-sm-4 col-md-4 hotel-address" id="hotelAddress">
+              <div>
+                <h4 class="block-margin font-class">MELBA BIOTECH</h4>
+                <h5 class="block-margin">
+                  <span class="footerAddress1">No, 78 79</span>
+                  <span class="footerAddressComma1">{{ ", " }}</span>
+                  <span class="footerAddress2">East Coast Road</span>
+                </h5>
+                <h5 class="block-margin">
+                  <span class="footerAddress2">Injambakkam</span>
+                  <span class="footerAddressComma1">{{ ", " }}</span>
+                  <span class="footerCity">Chennai</span>
+                </h5>
+                <h5 class="block-margin">
+                  <span class="footerZipcode">600115</span>
+                </h5>
+              </div>
             </div>
-            <mat-card-title>
-              Title
-            </mat-card-title>
-            <mat-card-content>
-                <p>
-                    The Small Description about the product.
-                  </p>
-            </mat-card-content>
-          </mat-card>
-        </mat-grid-tile>
-      </mat-grid-list>
-</div>
-
-
-
-
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>

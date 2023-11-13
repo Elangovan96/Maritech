@@ -1,0 +1,71 @@
+.offersCardContent {
+    padding: 16px;
+  }
+  
+  .offerCardParagraph,
+  p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: small;
+  }
+
+  .imgViewDetails {
+    position: relative;
+  }
+  .imgViewDetails:hover {
+    .viewDetail {
+      display: block;
+    }
+  }
+
+  ul {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  ul li {
+    flex: 1 0 25%;
+  }
+  
+
+  .book-close {
+    font-size: 25px;
+    content: "\f10a";
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .float-right {
+    float: right;
+  }
+  
+  .offerCardImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  ul li {
+    /* width: 24%; */
+    float: left;
+    padding: 10px 10px 0;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  ul li {
+    border-right: 1px solid #c1c1c1;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  ul {
+    padding: 15px 0;
+    list-style: none;
+  }
+  
+  .roomDetailHeader {
+    background-color: var(--book-primary-background);
+    color: var(--book-primary-text);
+  }
+  

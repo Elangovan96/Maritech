@@ -1,27 +1,30 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { ProductComponent } from './product/product.component';
-import { MatCardModule } from '@angular/material/card';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatExpansionModule } from '@angular/material/expansion';
-import { InfiniteScrollModule } from 'ngx-infinite-scroll';
-import {MatGridListModule} from '@angular/material/grid-list';
-import { MatDialogModule } from '@angular/material/dialog';
-import { AboutComponent } from './about/about.component';
+import { CertificateComponent } from './certificate/certificate.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ProductComponent,
-    AboutComponent
+    AboutComponent,
+    CertificateComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ import { AboutComponent } from './about/about.component';
     InfiniteScrollModule,
     MatGridListModule,
     MatDialogModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

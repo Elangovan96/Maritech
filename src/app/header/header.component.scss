@@ -15,13 +15,28 @@
   height: auto;
 }
 
+.menuItem {
+  display: inline-flex;
+  align-items: center;
+  margin: 0px 30px;
+  cursor: pointer;
+}
+
+
+.headerSubMenu {
+  padding-top: 20px;
+  background-color: white;
+  border-top: 1px solid #464646;
+  padding-bottom: 10px;
+}
+
 .offers-total-count {
   display: inline-block;
 }
 
 .appHeader {
     background-color: #fafafa;
-    padding: 10px 15px 10px 15px;
+    //padding: 10px 15px 10px 15px;
 }
 
 .headerMiniMenu {
@@ -51,44 +66,6 @@
 
 .image-height {
   height: 85%;
-}
-
-.offersCard:hover {
-  box-shadow: 0rem 0.4375rem 0.5rem rgba(0, 0, 0, 0.1), 0rem 0.3125rem 1.375rem rgba(0, 0, 0, 0.06),
-    0rem 0.75rem 1.0625rem rgba(0, 0, 0, 0.06);
-  cursor: pointer;
-  z-index: 10;
-  .detailsArrow {
-    display: block;
-  }
-}
-
-.loginBtn{
-  position: absolute;
-  top: 30px;
-  right: 160px;
-  height: 37px;
-  box-sizing: border-box;
-  min-width: 60px;
-  padding: 0 16px;
-  border-radius: 4px;
-  background-color: #393ac0;
-  color: white;
-  cursor: pointer;
-}
-
-.contactBtn{
-  position: absolute;
-  top: 30px;
-  right: 50px;
-  height: 37px;
-  box-sizing: border-box;
-  min-width: 60px;
-  padding: 0 16px;
-  border-radius: 4px;
-  background-color: #393ac0;
-  color: white;
-  cursor: pointer;
 }
 
 
@@ -144,15 +121,36 @@
     animation-fill-mode: none;
   }
 
+  .aboutDAta{
+    padding-left: 20px;
+    max-height: 300px;
+    max-width: 200%;
+    float: left;
+  }
+
   .headerLogo {
     width: 160px;
     height: auto;
     cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 5px;
   }
 
   .fadeInDown {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
+  }
+
+  .viewDetail {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    color: white;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.71);
+    font-size: 25px;
   }
 
   .headerMainMenu {
@@ -178,16 +176,46 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  .text {
+    font-size: 70px;
+    float: right;
+  }
+
+  .container-data {
+    display: flex;
+    align-items: center; 
+    column-gap: 50px;
+   }
   
   .banner-header {
-    margin: 20px;
-    min-height: 300px;
+    //margin: -20px;
+    min-height: 350px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: sticky;
+    position: static;
     top: -150px;
     z-index: 9998;
     background-attachment: initial;
     box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.61);
   }
+
+  .footer-main {
+    height: 150px;
+    background-color: #263238;
+  }
+  
+  #footerItem {
+    position: relative !important;
+    bottom: 0;
+  }
+  
+
+  
+  .font-class {
+    font-size: 25px;
+  }
+  
+ 
+  

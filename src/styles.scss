@@ -2,3 +2,21 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.add-blur {
+    filter: blur(3px) !important;
+  }
+
+  .overflowAutoClass {
+    padding: 15px;
+  }
+  
+  .modalbox {
+    mat-dialog-container {
+      overflow-x: hidden !important
+    }
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }

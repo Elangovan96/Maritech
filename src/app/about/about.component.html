@@ -1,21 +1,18 @@
 
 <div class="mainHeader">
     <div class="container-fluid appHeader">
+      <div class="banner-header" id="banner-header"
+        style="background: url('assets/bannerImage.jpg') no-repeat center center , #bcbcbc">
+      </div>
         <div class="row">
-
-
             <div class="logowrapper col-5 col-sm-5 col-md-3 col-lg-3 col-xl-3">
-                <img class="animated fadeInDown headerLogo" alt="logo" src="assets/logo.jpg" (click)="openClient()" />
                 <div style="display: inline-block">
+                  <img class="animated fadeInDown headerLogo" alt="logo" src="assets/logo.png" (click)="openClient()" />
+
                 <button mat-raised-button color="primary" class="loginBtn" style="margin-left: 8px" (click)="openHome()">
                   <span class="login-btn-text">{{ 'Home' }} </span>
                 </button>
               </div>
-            
-          </div>
-            <div class="banner-header" id="banner-header"
-                style="background: url('assets/bannerImage.jpg') no-repeat center center , #bcbcbc">
-        </div>
         </div>
     </div>
     

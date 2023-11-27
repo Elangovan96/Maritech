@@ -8,19 +8,33 @@ import { Router } from '@angular/router';
 })
 export class AboutComponent implements OnInit {
 
+  wid: number = 3;
   constructor(
     public router: Router
   ) { }
 
   ngOnInit(): void {
+    this.wid = (window.innerWidth <= 768) ? 1 : 3;
+
   }
+
+  openAbout() {
+    this.router.navigate(['/About']);
+  }
+
+  openContact() {}
+
+  openCertificate() {
+    this.router.navigate(['/Certificates']);
+  }
+
 
   openHome(){
     this.router.navigate(['/Home']);
   }
 
-  openClient(){
-
+  openClient() {
+    this.router.navigate(['/']);
   }
 
 }

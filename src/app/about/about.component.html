@@ -1,59 +1,202 @@
-
-<div class="mainHeader">
-    <div class="container-fluid appHeader">
-      <div class="banner-header" id="banner-header"
-        style="background: url('assets/bannerImage.jpg') no-repeat center center , #bcbcbc">
-      </div>
-        <div class="row">
-            <div class="logowrapper col-5 col-sm-5 col-md-3 col-lg-3 col-xl-3">
-                <div style="display: inline-block">
-                  <img class="animated fadeInDown headerLogo" alt="logo" src="assets/logo.png" (click)="openClient()" />
-
-                <button mat-raised-button color="primary" class="loginBtn" style="margin-left: 8px" (click)="openHome()">
-                  <span class="login-btn-text">{{ 'Home' }} </span>
-                </button>
-              </div>
-        </div>
+<div style="overflow-x: hidden;">
+  <div class="container-fluid appHeader">
+    <div class="banner-header" id="banner-header"
+      style="background: url('assets/bannerImage.png') no-repeat center center , #bcbcbc">
     </div>
-    
+    <div class="logowrapper col-5 col-sm-5 col-md-3 col-lg-3 col-xl-3">
+      <img class="animated fadeInDown headerLogo" alt="logo" src="assets/logo.png" (click)="openClient()" />
+    </div>
+    <div class="container-fluid headerSubMenu" style="overflow-y: hidden;">
+      <div class="row">
+        <div class="col-xl-12">
+          <div style="text-align: center">
+            <div class="animated fadeInDown">
+              <div class="menuItem">
+                <h4 (click)="openClient()">
+                  <a style="letter-spacing: 1px;font-weight: 500;" class="fa fa-certificate" aria-hidden="true">
+                    <span style="margin-right: 5px;"> </span>
+                     HOME
+                  </a>
+                </h4>
+              </div>
+              <div class="menuItem">  
+                <h4 (click)="openAbout()">
+                  <a style="letter-spacing: 1px;font-weight: 500;text-decoration: underline;" class="fa fa-certificate" aria-hidden="true">
+                    <span style="margin-right: 5px"> </span>
+                    WHO WE ARE
+                  </a>
+                </h4>
+              </div>
+              <div class="menuItem">
+                <h4 (click)="openCertificate()">
+                  <a style="letter-spacing: 1px;font-weight: 500;" class="fa fa-certificate" aria-hidden="true">
+                    <span style="margin-right: 3px"> </span>
+                    CERTIFICATES
+                  </a>
+                </h4>
+              </div>
+              <div class="menuItem">
+                <h4 (click)="openContact()">
+                  <a style="letter-spacing: 1px;font-weight: 500;" class="fa fa-certificate" aria-hidden="true">
+                    <span style="margin-right: 5px"> </span>
+                    CONTACT US
+                  </a>
+                </h4>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2 class="mat-body-strong" style="text-align: center;">OUR VALUES</h2>
+    <mat-grid-list cols={{wid}} rowHeight="2:1">
+      <mat-grid-tile>
+        <mat-card class="value-card">
+          <mat-card-content>
+            <h3 class="mat-body-strong" style="text-align: left"><b>INTEGRITY : </b></h3>
+            <h3 class="mat-body-strong" style="text-align: left">We will be fair, honest, transparent and ethical in our
+              conduct.</h3>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card class="value-card">
+          <mat-card-content>
+            <h3 class="mat-body-strong" style="text-align: left"><b>EXCELLENCE : </b></h3>
+            <h3 class="mat-body-strong" style="text-align: left">We will be passionate about Achieving the highest
+              standards of quality, always promoting
+              meritocracy.</h3>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card class="value-card">
+          <mat-card-content>
+            <h3 class="mat-body-strong" style="text-align: left"><b>PIONEERING : </b></h3>
+            <h3 class="mat-body-strong" style="text-align: left">We will be bold and agile, courageously taking on
+              challenges, using in-depth customer
+              insight to develop innovative solutions.</h3>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card class="value-card">
+          <mat-card-content>
+            <h3 class="mat-body-strong" style="text-align: left"><b>RESPONSIBILITY : </b></h3>
+            <h3 class="mat-body-strong" style="text-align: left"> We will be integrate environmental and social
+              principles
+              in our businesses, ensuring that
+              what come from the people goes back to them in many folds.</h3>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card class="value-card">
+          <mat-card-content>
+            <h3 class="mat-body-strong" style="text-align: left"><b>UNITY : </b></h3>
+            <h3 class="mat-body-strong" style="text-align: left">We invest in our people and partners, enable continuous
+              learning and build caring and
+              collaborative relationships based on true and mutual respect.</h3>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
 
-<div class="about-text">
-  <h2 class="mat-body-strong" style="text-align: center;">ABOUT MELBA AQUACULTURE</h2>
-  <h3 class="mat-body-strong" style="text-align: center" >Welcome to the home of Melba Aquaculture, where innovative probiotic solutions meet the world of aquaculture.</h3>
+  <!-- <div>
   <br>
-  <h2 class="mat-body-strong" style="font-style: italic bold ">OUR JOURNEY</h2>
-  <h3 class="mat-body-strong" style="text-align: left">Founded on the principles of collaboration, innovation, and commitment, Melba Aquaculture has emerged as a leader in the field of aquaculture probiotics. Our journey commenced with a powerful synergy of biotechnologist, aquaculture professionals, and industry experts, all converging to address the pressing challenges within the aquaculture sector. Since our inception, every product in our portfolio has been meticulously developed to deliver innovative solutions to the industry's most pressing issues.</h3>
-  <br>
-  <h2 class="mat-body-strong" style="font-style: italic bold ">SCIENTIFIC EXCELLENCE</h2>
-  <h3 class="mat-body-strong" style="text-align: left">At the core of our success lies the unmatched expertise of our team, including biotechnologist and aquaculture professionals. Their extensive knowledge and experience play a pivotal role in the formulation of cutting-edge probiotic products.</h3>
-  <br>
-  <h2 class="mat-body-strong" style="font-style: italic bold ">CUSTOMISED SOLUTIONS</h2>
-  <h3 class="mat-body-strong" style="text-align: left">We understand that aquaculture is a diverse and dynamic industry, which is why we're committed to tailoring our solutions to your unique needs. Our probiotic products are designed to address specific challenges, providing targeted results.</h3>
-  <br>
-  <h2 class="mat-body-strong" style="font-style: italic bold ">RESERACH AND DEVELOPMENT</h2>
-  <h3 class="mat-body-strong" style="text-align: left">We invest heavily in research and development, ensuring that our probiotics are backed by rigorous scientific scrutiny. This dedication to innovation guarantees the effectiveness of our solutions.</h3>
-  <br>
-  <h2 class="mat-body-strong" style="font-style: italic bold ">SUSTAINABILITY</h2>
-  <h3 class="mat-body-strong" style="text-align: left">Our products contribute to sustainable aquaculture practices, reducing the reliance on antibiotics and improving water quality, which is not only beneficial for your business but also for the environment.</h3>
-  <br>
-  <h2 class="mat-body-strong" style="font-style: italic bold ">PRODUCT RANGE</h2>
-  <h3 class="mat-body-strong" style="text-align: left">Explore our wide range of probiotic products, each engineered to provide solutions in diverse applications. From enhanced growth rates to disease management, our products cover a spectrum of aquaculture needs</h3>
-  <br>
-  <h2 class="mat-body-strong" style="font-style: italic bold ">QUALITY ASSURANCE</h2>
-  <h3 class="mat-body-strong" style="text-align: left">
-    We maintain stringent quality control measures to guarantee the consistency and safety of our products. Melba Aquaculture adheres to the highest industry standards and certifications.
-    </h3>
-    <br>
-    <h2 class="mat-body-strong" style="font-style: italic bold ">PROVEN SUCCESS</h2>
-  <h3 class="mat-body-strong" style="text-align: left">At Melba Aquaculture, our success is measured by the countless successful trials we've conducted. These trials have consistently demonstrated the remarkable impact of our probiotics on aquaculture. Our commitment to delivering effective solutions is reflected in the stories of satisfied clients who have witnessed the transformative power of our products.</h3>
-  <br>
-  <h2 class="mat-body-strong" style="font-style: italic bold ">FARMERS' TESTIMONIALS</h2>
-  <h3 class="mat-body-strong" style="text-align: left">Hear from aquaculture farmers themselves about the transformative impact our products have had on their operations. Their testimonials provide real-world validation of the effectiveness of our solutions.</h3>
-  <br>
-  <h2 class="mat-body-strong" style="font-style: italic bold; ">ONGOING SUPPORT</h2>
-  <h3 class="mat-body-strong" style="text-align: left">We're not just a product provider; we're a partner on your journey to aquaculture success. Count on us for continuous support and access to valuable educational resources.</h3>
-
-
+  <h2 class="mat-body-strong" style="text-align: center;">OUR SECTORS</h2>
+  <mat-grid-list cols="1" rowHeight="6:1">
+    <mat-grid-tile>
+      <mat-card class="sector-card">
+        <mat-card-content>
+          <h3 class="mat-body-strong" style="text-align: left"><b>SHRIMP HATCHERY : </b></h3>
+          <h3 class="mat-body-strong" style="text-align: left">&nbsp; &nbsp; &nbsp;we focus on nurturing young shrimp to support your aquaculture needs. We ensure the
+            best conditions for their growth and well-being, providing you with healthy shrimp fry for
+            your shrimp farming operations.</h3>  
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="sector-card">
+        <mat-card-content>
+          <h3 class="mat-body-strong" style="text-align: left"><b>SHRIMP AND FISH FARMS : </b></h3>
+          <h3 class="mat-body-strong" style="text-align: left">&nbsp; &nbsp; &nbsp;We specialise in sustainably raising high-quality shrimp and fish. Our goal is to provide you
+            with delicious and responsible seafood products. Whether you&#39;re a seafood enthusiast or a
+            business owner, we&#39;re your reliable source for top-notch seafood.</h3>  
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="sector-card">
+        <mat-card-content>
+          <h3 class="mat-body-strong" style="text-align: left"><b>ENVIRONMENTAL BIO REMEDIATION : </b></h3>
+          <h3 class="mat-body-strong" style="text-align: left">&nbsp; &nbsp; &nbsp;Our Environmental Bio-Remediation sector is all about restoring the environment. We use
+            natural processes and innovative techniques to clean up and revitalise contaminated
+            areas. Whether it's soil, water, or air, our focus is on sustainable solutions to promote a
+            healthier planet. If you're committed to environmental conservation and need expert
+            support, we are here to make a positive impact.</h3>  
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="sector-card">
+        <mat-card-content>
+          <h3 class="mat-body-strong" style="text-align: left"><b>WAST WATER TREATMENT : </b></h3>
+          <h3 class="mat-body-strong" style="text-align: left"> &nbsp; &nbsp; &nbsp;Our Wastewater Treatment sector is dedicated to cleaning and purifying wastewater. We
+            employ advanced techniques and eco-friendly processes to ensure that the water released
+            back into the environment is safe and free from contaminants. Whether you&#39;re a
+            municipality, industry, or facility, we provide efficient and sustainable solutions to manage
+            and treat wastewater, promoting environmental responsibility and public health.</h3>  
+        </mat-card-content>
+      </mat-card>    
+  </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="sector-card">
+        <mat-card-content>
+          <h3 class="mat-body-strong" style="text-align: left"><b>COMMUNITY LAKES AND WATER BODY DECLARATION : </b></h3>
+          <h3 class="mat-body-strong" style="text-align: left">&nbsp; &nbsp; &nbsp;we focus on preserving and enhancing the beauty and health of community lakes and
+            water bodies. Our mission is to work collaboratively with communities to declare these
+            natural resources as vital parts of their identity. By fostering appreciation and responsible
+            management, we ensure that these water bodies continue to enrich the lives of the people
+            they serve. If you&#39;re passionate about your local environment and the well-being of your
+            community, We are here to support your goals.</h3>  
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div> -->
+  <div class="footer-main">
+    <div class="ng-star-inserted">
+      <!---->
+      <nav class="navbar navbar-default book-footer navbar-fixed-bottom ng-star-inserted" id="footerItem"
+        role="navigation">
+        <div class="container-fluid">
+          <div class="row rowfullwidth">
+            <div class="col-xs-12 col-sm-4 col-md-4 hotel-address" id="hotelAddress">
+              <div>
+                <h4 class="block-margin font-class">MELBA BIOTECH</h4>
+                <h5 class="block-margin">
+                  <span class="footerAddress1">No, 78 79</span>
+                  <span class="footerAddressComma1">{{ ", " }}</span>
+                  <span class="footerAddress2">East Coast Road</span>
+                </h5>
+                <h5 class="block-margin">
+                  <span class="footerAddress2">Injambakkam</span>
+                  <span class="footerAddressComma1">{{ ", " }}</span>
+                  <span class="footerCity">Chennai</span>
+                </h5>
+                <h5 class="block-margin">
+                  <span class="footerZipcode">600115</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
 </div>
-
-

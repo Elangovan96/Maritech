@@ -15,14 +15,19 @@ export class HeaderComponent implements OnInit {
   blurData: boolean = false;
   constructor(public dialog: MatDialog, public router: Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.wid = (window.innerWidth <= 768) ? 1 : 3;
+  }
 
   showMobileMenu: boolean = false;
   products: Product[] = productData;
   configuredLanguages: Array<String> = ['English', 'Tamil'];
   language: String = 'English';
+  wid: number = 3;
 
-  openClient() {}
+  openClient() {
+    this.router.navigate(['/']);
+  }
 
   setLanguage(lang: any) {}
 

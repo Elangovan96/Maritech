@@ -9,14 +9,33 @@
     font-size: small;
   }
 
+  .image-height {
+    height: 55vh;
+    width: 60vh;
+    margin-left: 15%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .image-height {
+      margin-left: 1%;
+    }
+  }
+
+  .value-card {
+    width: 90%;
+    background-color: rgba(0,0,0,.12);
+  }
+  
   .imgViewDetails {
     position: relative;
+    
   }
   .imgViewDetails:hover {
     .viewDetail {
       display: block;
     }
   }
+
 
   ul {
     flex-wrap: wrap;

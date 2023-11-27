@@ -20,7 +20,7 @@
   {
     "title": "Melba Vitzyme",
     "description": "Melba Vitzyme is a specially formulated feed additive which provides excellent stress management nutrition for shrimp to handle variation of salinity, pH, Temperature and high organic load accumulation in pond.",
-    "dosage": "5 gm/kg of feed ",
+    "dosage": "5 gm/kg",
     "netWeight": "500 gm",
     "minQuantity":"22",
     "functions": [
@@ -36,7 +36,7 @@
   {
     "title": "Merry Gut",
     "description": "Merry Gut is a high quality gut probiotic to be used as feed top coat in shrimp.",
-    "dosage": "3 gm/kg of feed",
+    "dosage": "3 gm/kg",
     "netWeight": "500 gm",
     "minQuantity":"22",
     "functions": [
@@ -47,7 +47,7 @@
       "Add 3 gm/kg of feed to mixed with required quantity along with Melba Flinka gel, shade dry the feed and broadcast.",
       "Recommended to use Merry gut in all meals."
     ],
-    "image": "assets/BacimaxPro.jpg"
+    "image": "assets/Merrygut.jpg"
   },
   {
     "title": "Melba PSB-L",
@@ -71,7 +71,7 @@
   {
     "title": "Flinka Gel",
     "description": "Flinka Gel is a 2-in-1 formula providing excellent binding capability for feed top coat and with additional nutrients.",
-    "dosage": "10-20 gm/kg of feed",
+    "dosage": "10-20 gm/kg",
     "netWeight": "5 ltr",
     "minQuantity":"2",
     "functions": [
@@ -88,7 +88,7 @@
   {
     "title": "Cheer Max",
     "description": "Cheer Max is a specially formulated feed supplement to provide high immune strength to the shrimp.",
-    "dosage": "5 gm/kg of feed",
+    "dosage": "5 gm/kg",
     "netWeight": "500 gm",
     "minQuantity":"22",
     "functions": [
@@ -105,7 +105,7 @@
   {
     "title": "Liv Yeast",
     "description": "Liv Yeast is a pure concentrated live yeast culture specifically formulated for feed supplement to get better growth and improve shrimp health.",
-    "dosage": "3-5 gm/kg of feed",
+    "dosage": "3-5 gm/kg",
     "netWeight": "1 kg.",
     "minQuantity":"5",
     "functions": [

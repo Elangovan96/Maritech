@@ -1,0 +1,137 @@
+.mainHeader {
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    left: 0;
+}
+
+.appHeader {
+    background-color: #fafafa;
+    padding: 10px 15px 10px 15px;
+}
+
+.headerLogo {
+    width: 160px;
+    height: auto;
+    cursor: pointer;
+    top: 20px;
+    left: 43%;
+  }
+
+  .certClass {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .conClass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: 768px) {
+    .conClass {
+      flex-direction: column;
+    }
+  }
+
+  .con-card {
+    padding: 20px;
+    height: 85%;
+    width: 20%;
+    transition: transform 0.2s;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 1px 52px -7px rgba(84, 84, 84, 0.4);
+    -moz-box-shadow: 0px 1px 52px -7px rgba(84, 84, 84, 0.4);
+    box-shadow: 0px 1px 52px -7px rgba(84, 84, 84, 0.4);
+  }
+
+  @media screen and (max-width: 768px) {
+    .con-card {
+      left: 10px;
+      padding: 40px;
+      width: 70%;
+    }
+  }
+
+  .headerSubMenu {
+    top: 20%;
+    padding-top: 20px;
+    background-color: white;
+    border-top: 1px solid #464646;
+    overflow-y: hidden;
+  }
+
+  .menuItem {
+    display: inline-flex;
+    align-items: center;
+    margin: 0px 30px;
+    cursor: pointer;
+  }
+
+
+  .loginBtn{
+    position: relative;
+    align-items: center;
+    height: 37px;
+    box-sizing: border-box;
+    min-width: 60px;
+    padding: 0 16px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+
+  .value-card {
+    left: 25%;
+    padding: 20px;
+    height: 85%;
+    width: 50%;
+    transition: transform 0.2s;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 1px 52px -7px rgba(84, 84, 84, 0.4);
+    -moz-box-shadow: 0px 1px 52px -7px rgba(84, 84, 84, 0.4);
+    box-shadow: 0px 1px 52px -7px rgba(84, 84, 84, 0.4);
+  }
+
+  @media screen and (max-width: 768px) {
+    .value-card {
+      left: 10%;
+      width: 70%;
+    }
+  }
+
+  .host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+   
+  .footer-main {
+    height: 150px;
+    background-color: black
+  }
+  
+  #footerItem {
+    position: relative !important;
+    bottom: 0;
+  }
+  
+.hotel-address {
+  padding: 30px 15px 10px 15px;
+  color: white;
+  h4 {
+    margin-bottom: 3px;
+  }
+  h5 {
+    margin: 0px;
+  }
+}
+
+  
+  .font-class {
+    font-size: 25px;
+  }

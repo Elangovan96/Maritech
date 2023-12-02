@@ -20,6 +20,8 @@
 
 @media screen and (max-width: 768px) {
   .certClass {
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -66,7 +68,7 @@
   
   .footer-main {
     height: 150px;
-    background-color: #263238;
+    background-color: black
   }
   
   #footerItem {

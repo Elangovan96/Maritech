@@ -18,6 +18,10 @@ import { HeaderComponent } from './header/header.component';
 import { ProductComponent } from './product/product.component';
 import { CertificateComponent } from './certificate/certificate.component';
 import {MatIconModule} from '@angular/material/icon';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+
 
 @NgModule({
   declarations: [
@@ -25,9 +29,11 @@ import {MatIconModule} from '@angular/material/icon';
     HeaderComponent,
     ProductComponent,
     AboutComponent,
-    CertificateComponent
+    CertificateComponent,
+    ContactComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -41,6 +47,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatDialogModule,
     MatListModule,
     MatIconModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

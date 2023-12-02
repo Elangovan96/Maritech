@@ -1,0 +1,132 @@
+<div class="mainHeader">
+    <div class="container-fluid appHeader">
+        <div class="logowrapper col-5 col-sm-5 col-md-3 col-lg-3 col-xl-3">
+            <div style="display: inline-block">
+                <img class="animated fadeInDown headerLogo" alt="logo" src="assets/logo.png" (click)="openClient()" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid headerSubMenu" style="overflow-y: hidden;">
+        <div class="row">
+            <div class="col-xl-12">
+                <div style="text-align: center">
+                    <div class="animated fadeInDown">
+                        <div class="menuItem">
+                            <h4 (click)="openClient()">
+                                <a style="letter-spacing: 1px;font-weight: 500;" class="fa fa-certificate"
+                                    aria-hidden="true">
+                                    <span style="margin-right: 5px;"> </span>
+                                    HOME
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="menuItem">
+                            <h4 (click)="openAbout()">
+                                <a style="letter-spacing: 1px;font-weight: 500;" class="fa fa-certificate"
+                                    aria-hidden="true">
+                                    <span style="margin-right: 5px"> </span>
+                                    OUR VALUES
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="menuItem">
+                            <h4 (click)="openCertificate()">
+                                <a style="letter-spacing: 1px;font-weight: 500" class="fa fa-certificate"
+                                    aria-hidden="true">
+                                    <span style="margin-right: 3px"> </span>
+                                    CERTIFICATES
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="menuItem">
+                            <h4 (click)="openContact()">
+                                <a style="letter-spacing: 1px;font-weight: 500;text-decoration: underline;"
+                                    aria-hidden="true">
+                                    <span style="margin-right: 5px"> </span>
+                                    CONTACT US
+                                </a>
+                            </h4>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div>
+        <mat-card class="value-card animated">
+            <div class="certClass">
+                <h3 class="mat-body-strong" style="text-align: left"><b>Name : </b></h3>
+                <mat-form-field appearance="fill">
+                    <input matInput type="text" id="name" name="name" [(ngModel)]="name" placeholder="John Doe"
+                        required />
+                </mat-form-field>
+            </div>
+            <br>
+            <div class="certClass">
+                <h3 class="mat-body-strong" style="text-align: left"><b>Organisation : </b></h3>
+                <mat-form-field appearance="fill">
+                    <input matInput type="organisation" id="organisation" name="organisation" [(ngModel)]="organisation" placeholder="XYZ Tech"
+                        required />
+                </mat-form-field>
+            </div>
+            <br>
+            <div class="certClass">
+                <h3 class="mat-body-strong" style="text-align: left"><b>Email Address : </b></h3>
+                <mat-form-field appearance="fill">
+                    <input matInput type="email" id="email" name="email" [(ngModel)]="email"
+                        placeholder="example@domain.com" required />
+                </mat-form-field>
+            </div>
+            <br>
+            <div class="certClass">
+                <h3 class="mat-body-strong" style="text-align: left"><b>Phone : </b></h3>
+                <mat-form-field appearance="fill">
+                    <input matInput type="text" id="phone" name="phone" [(ngModel)]="phone" placeholder="+91 9876543210"
+                        required />
+                </mat-form-field>
+            </div>
+            <br>
+            <div class="certClass">
+                <h3 class="mat-body-strong" style="text-align: left"><b>Message : </b></h3>
+                <mat-form-field appearance="fill">
+                    <textarea matInput type="message" id="message" name="message" [(ngModel)]="message"
+                        placeholder="Tell us briefly about your needs" required> </textarea>
+                </mat-form-field>
+            </div>
+            <br>
+            <button class="loginBtn" style="margin-left: 5%" (click)="sendEmail()" color="primary" mat-raised-button>
+                <i aria-hidden="true" class="book-login"></i><span class="login-btn-text">Submit </span>
+            </button>
+        </mat-card>    
+    </div>
+    <br>
+    <div class="footer-main">
+        <div class="ng-star-inserted">
+          <!---->
+          <nav class="navbar navbar-default book-footer navbar-fixed-bottom ng-star-inserted" id="footerItem"
+            role="navigation">
+            <div class="container-fluid">
+              <div class="row rowfullwidth">
+                <div class="col-xs-12 col-sm-4 col-md-4 hotel-address" id="hotelAddress">
+                  <div>
+                    <h4 class="block-margin font-class">MELBA BIOTECH</h4>
+                    <h5 class="block-margin">
+                      <span class="footerAddress1">No, 5B</span>
+                      <span class="footerAddressComma1">{{ ", " }}</span>
+                      <span class="footerAddress2">M.D. Sitaraman Avenue</span>
+                    </h5>
+                    <h5 class="block-margin">
+                      <span class="footerAddress2">VGP Layout, Injambakkam</span>
+                    </h5>
+                    <h5 class="block-margin">
+                      <span class="footerZipcode">Chennai - 600115</span>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>

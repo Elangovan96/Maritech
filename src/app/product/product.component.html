@@ -5,73 +5,73 @@
     </h2>
   </div>
 </div>
-<mat-dialog-content style="padding: 0;overflow-x: hidden;" class="m-0">
-  <div class="imgViewDetails">
-    <img mat-card-image class="image-height" alt="products" src="{{data.image}}">
-  </div>
-
-  <div class="offersCardContent">
-    <div>
-      <mat-card class="value-card">
-        <mat-card-content>
-          <h5 class="offerCardParagraph" style="font-family: 'Times New Roman', Times, serif;"
-            [innerHTML]="data.description"></h5>
-        </mat-card-content>
-      </mat-card>
+  <mat-dialog-content style="padding: 0;overflow-x: hidden;" [ngClass]="isMobile ? 'm-0' : 'm-0 certClass'">
+    <div class="imgViewDetails">
+      <img mat-card-image class="image-height" alt="products" src="{{data.image}}">
     </div>
-    <div>
-      <div class="container-fluid">
-        <ul class="row">
-          <li class="panel-offer-detail-li col-6 col-sm-6 col-md-4 col-lg-4">
-            <span style="font-size: 30px" class="book-check-in"></span>
-            <p style="margin-top: 10px"> Dosage </p>
-            <strong>
-              <p style="font-weight: 900">
-                {{ data.dosage }}
-              </p>
-            </strong>
-          </li>
-          <li class="panel-offer-detail-li col-6 col-sm-6 col-md-4 col-lg-4">
-            <span style="font-size: 30px" class="book-check-in"></span>
-            <p style="margin-top: 10px"> Net Weight </p>
-            <strong>
-              <p style="font-weight: 900">
-                {{ data.netWeight }}
-              </p>
-            </strong>
-          </li>
-          <li class="panel-offer-detail-li col-6 col-sm-6 col-md-4 col-lg-4">
-            <span style="font-size: 30px" class="book-check-in"></span>
-            <p style="margin-top: 10px"> Min Quantity </p>
-            <strong>
-              <p style="font-weight: 900">
-                {{ data.minQuantity }}
-              </p>
-            </strong>
-          </li>
-        </ul>
+
+    <div class="offersCardContent">
+      <div>
+        <mat-card class="value-card">
+          <mat-card-content>
+            <h5 class="offerCardParagraph" style="font-family: 'Times New Roman', Times, serif;"
+              [innerHTML]="data.description"></h5>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div>
+        <div class="container-fluid">
+          <ul class="row">
+            <li class="panel-offer-detail-li col-6 col-sm-6 col-md-4 col-lg-4">
+              <span style="font-size: 30px" class="book-check-in"></span>
+              <p style="margin-top: 10px"> Dosage </p>
+              <strong>
+                <p style="font-weight: 900">
+                  {{ data.dosage }}
+                </p>
+              </strong>
+            </li>
+            <li class="panel-offer-detail-li col-6 col-sm-6 col-md-4 col-lg-4">
+              <span style="font-size: 30px" class="book-check-in"></span>
+              <p style="margin-top: 10px"> Net Weight </p>
+              <strong>
+                <p style="font-weight: 900">
+                  {{ data.netWeight }}
+                </p>
+              </strong>
+            </li>
+            <li class="panel-offer-detail-li col-6 col-sm-6 col-md-4 col-lg-4">
+              <span style="font-size: 30px" class="book-check-in"></span>
+              <p style="margin-top: 10px"> Min Quantity </p>
+              <strong>
+                <p style="font-weight: 900">
+                  {{ data.minQuantity }}
+                </p>
+              </strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <mat-card class="value-card">
+          <mat-card-content>
+            <h3 class="mat-body-strong" style="font-weight: bold ">Functions : </h3>
+            <div *ngFor="let function of data.functions">
+              <h5 class="offerCardParagraph" [innerHTML]="function"></h5>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <br>
+      <div>
+        <mat-card class="value-card">
+          <mat-card-content>
+            <h3 class="mat-body-strong" style="font-weight: bold ">Application and Dosage : </h3>
+            <div *ngFor="let application of data.application">
+              <h5 class="offerCardParagraph" [innerHTML]="application"></h5>
+            </div>
+          </mat-card-content>
+        </mat-card>
       </div>
     </div>
-    <div>
-      <mat-card class="value-card">
-        <mat-card-content>
-          <h3 class="mat-body-strong" style="font-weight: bold ">Functions : </h3>
-          <div *ngFor="let function of data.functions">
-            <h5 class="offerCardParagraph" [innerHTML]="function"></h5>
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
-    <br>
-    <div>
-      <mat-card class="value-card">
-        <mat-card-content>
-          <h3 class="mat-body-strong" style="font-weight: bold ">Application and Dosage : </h3>
-          <div *ngFor="let application of data.application">
-            <h5 class="offerCardParagraph" [innerHTML]="application"></h5>
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
-  </div>
-</mat-dialog-content>
+  </mat-dialog-content>

@@ -10,6 +10,7 @@ import { Product } from './product';
 export class ProductComponent implements OnInit {
 
   data!: Product;
+  isMobile: boolean = false;
 
   constructor(
     public dialogRef: MatDialogRef<ProductComponent>,
@@ -20,7 +21,7 @@ export class ProductComponent implements OnInit {
   };
 
   ngOnInit(): void {
-   
+    this.isMobile = window.innerWidth <= 768;
   }
   
   ngOnDestroy() {}

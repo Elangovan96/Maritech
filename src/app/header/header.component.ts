@@ -16,7 +16,8 @@ export class HeaderComponent implements OnInit {
   constructor(public dialog: MatDialog, public router: Router) {}
 
   ngOnInit(): void {
-    this.wid = (window.innerWidth <= 768) ? 1 : 3;
+    this.wid = window.innerWidth <= 768 ? 1 : 3;
+    this.dialogWid = window.innerWidth <= 768 ? '500px' : '1000px';
   }
 
   showMobileMenu: boolean = false;
@@ -24,6 +25,7 @@ export class HeaderComponent implements OnInit {
   configuredLanguages: Array<String> = ['English', 'Tamil'];
   language: String = 'English';
   wid: number = 3;
+  dialogWid: String = '500px';
 
   openClient() {
     this.router.navigate(['/']);
@@ -35,7 +37,9 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/About']);
   }
 
-  openContact() {}
+  openContact() {
+    this.router.navigate(['/Contact']);
+  }
 
   openCertificate() {
     this.router.navigate(['/Certificates']);
@@ -44,9 +48,9 @@ export class HeaderComponent implements OnInit {
   viewDetails(product: any) {
     this.blurData = true;
     const dialogRef = this.dialog.open(ProductComponent, {
-      width: '500px',
+      width: 'this.dialogWid',
       maxHeight: '90vh',
-      panelClass:  ["modalbox"],
+      panelClass: ['modalbox'],
       data: { from: product },
     });
     dialogRef.afterClosed().subscribe((result) => {

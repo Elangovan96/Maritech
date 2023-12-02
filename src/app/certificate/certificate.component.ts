@@ -27,7 +27,9 @@ export class CertificateComponent implements OnInit {
     this.router.navigate(['/About']);
   }
 
-  openContact() {}
+  openContact() {
+    this.router.navigate(['/Contact']);
+  }
 
     openCertificate() {
     this.router.navigate(['/Certificates']);

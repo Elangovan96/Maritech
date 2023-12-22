@@ -2,6 +2,9 @@
   <div>
     <h2 class="name offerCardName room_name  float-left">{{ data.title }}
       <span style="float: right;cursor: pointer;" (click)="closeModal()">X</span>
+      <button class="loginBtn" style="float: right;margin-right: 5%;" (click)="sendEnquiry()" color="primary" mat-raised-button>
+        <i aria-hidden="true" class="book-login"></i><span class="login-btn-text">ENQUIRY </span>
+    </button>
     </h2>
   </div>
 </div>

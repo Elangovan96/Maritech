@@ -10,6 +10,19 @@
     font-family: 'Times New Roman', Times, serif;
   }
 
+  .loginBtn{
+    position: relative;
+    align-items: center;
+    height: 37px;
+    box-sizing: border-box;
+    min-width: 60px;
+    padding: 0 16px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+
   .certClass {
     display: flex;
     flex-direction: row;

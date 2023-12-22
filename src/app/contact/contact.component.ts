@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact',
@@ -20,6 +21,11 @@ export class ContactComponent implements OnInit {
     console.log(this.email);
     console.log(this.phone);
     console.log(this.message);
+    emailjs.send("service_1ti7phm","template_pbzgy8q",{
+      from_name: "Elangovan",
+      to_name: "Test",
+      message: "Testing",
+      },"mrx5G72XIiVIMd1Sn");
   }
 
   ngOnInit(): void {}

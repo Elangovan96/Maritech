@@ -37,6 +37,20 @@
     }
   }
 
+  .contactData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 70px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .contactData {
+      flex-direction: column;
+      padding-left: 20px;
+    }
+  }
+
   .con-card {
     padding: 20px;
     height: 85%;
@@ -86,10 +100,10 @@
   }
 
   .value-card {
-    left: 25%;
+    left: 10%;
     padding: 20px;
     height: 85%;
-    width: 50%;
+    width: 80%;
     transition: transform 0.2s;
     border-radius: 30px;
     -webkit-box-shadow: 0px 1px 52px -7px rgba(84, 84, 84, 0.4);
@@ -99,9 +113,15 @@
 
   @media screen and (max-width: 768px) {
     .value-card {
-      left: 10%;
-      width: 70%;
+      left: 10px;
+      width: 80%;
     }
+  }
+
+  .value-card-data {
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
   }
 
   .host {

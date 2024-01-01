@@ -11,7 +11,6 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
-import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -21,6 +20,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
+import { SolutionComponent } from './solution/solution.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -28,9 +29,9 @@ import { MatInputModule } from '@angular/material/input';
     AppComponent,
     HeaderComponent,
     ProductComponent,
-    AboutComponent,
     CertificateComponent,
-    ContactComponent
+    ContactComponent,
+    SolutionComponent
   ],
   imports: [
     FormsModule,
@@ -48,6 +49,7 @@ import { MatInputModule } from '@angular/material/input';
     MatListModule,
     MatIconModule,
     MatInputModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -20,18 +20,10 @@
                   </h4>
                 </div>
                 <div class="menuItem">
-                  <h4 (click)="openAbout()">
+                  <h4 (click)="openSolution()">
                     <a style="letter-spacing: 1px;font-weight: 500;" class="fa fa-certificate" aria-hidden="true">
                       <span style="margin-right: 5px"> </span>
-                      OUR VALUES
-                    </a>
-                  </h4>
-                </div>
-                <div class="menuItem">
-                  <h4 (click)="openCertificate()">
-                    <a style="letter-spacing: 1px;font-weight: 500;" class="fa fa-certificate" aria-hidden="true">
-                      <span style="margin-right: 5px"> </span>
-                       CERTIFICATES
+                      SOLUTIONS
                     </a>
                   </h4>
                 </div>
@@ -66,33 +58,119 @@
     </div>
   </div>
   <br>
+  <br>
   <div class="container-fluid">
     <div class="row">
       <div class="col-xl-12" style="text-align:center">
         <h2>
-          {{ ' PRODUCTS ' }}
+          {{ ' OUR VALUES ' }}
         </h2>
       </div>
     </div>
-    
-    <mat-grid-list cols={{wid}} #grid rowHeight="430px" gutterSize="15px">
-      <mat-grid-tile *ngFor="let product of products">
-
-        <mat-card class="offersCard animated" style="cursor: pointer;" (click)="viewDetails(product)">
-          <img mat-card-image class="image-height" alt="products" src="{{product.image}}">
-          <mat-card-title style="font-style: inherit;font-size: large;">
-            {{product.title}}
-          </mat-card-title>
-          <mat-card-content>
-            <span> Dosage : </span>
-            <span style="font-weight: 500;">{{ product.dosage }} </span>
-            <br>
-            <span> Net Weight : </span>
-            <span style="font-weight: 500;"> {{ product.netWeight }} </span>
-          </mat-card-content>
-        </mat-card>
-      </mat-grid-tile>
-    </mat-grid-list>
+    <div>
+      <mat-grid-list cols={{wid}} rowHeight="2:1">
+        <mat-grid-tile>
+          <mat-card class="value-card">
+            <mat-card-content>
+              <h3 class="mat-body-strong" style="text-align: left"><b>INTEGRITY : </b></h3>
+              <h3 class="mat-body-strong" style="text-align: left">We will be fair, honest, transparent and ethical in our
+                conduct.</h3>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="value-card">
+            <mat-card-content>
+              <h3 class="mat-body-strong" style="text-align: left"><b>EXCELLENCE : </b></h3>
+              <h3 class="mat-body-strong" style="text-align: left">We will be passionate about Achieving the highest
+                standards of quality, always promoting
+                meritocracy.</h3>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="value-card">
+            <mat-card-content>
+              <h3 class="mat-body-strong" style="text-align: left"><b>PIONEERING : </b></h3>
+              <h3 class="mat-body-strong" style="text-align: left">We will be bold and agile, courageously taking on
+                challenges, using in-depth customer
+                insight to develop innovative solutions.</h3>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="value-card">
+            <mat-card-content>
+              <h3 class="mat-body-strong" style="text-align: left"><b>RESPONSIBILITY : </b></h3>
+              <h3 class="mat-body-strong" style="text-align: left"> We will be integrate environmental and social
+                principles
+                in our businesses, ensuring that
+                what come from the people goes back to them in many folds.</h3>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="value-card">
+            <mat-card-content>
+              <h3 class="mat-body-strong" style="text-align: left"><b>UNITY : </b></h3>
+              <h3 class="mat-body-strong" style="text-align: left">We invest in our people and partners, enable continuous
+                learning and build caring and
+                collaborative relationships based on true and mutual respect.</h3>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-xl-12" style="text-align:center">
+        <h2>
+          {{ ' MARKET ACCESS AND SPECIALITY ' }}
+        </h2>
+      </div>
+    </div>
+    <div>
+      <mat-grid-list cols={{wid}} rowHeight="2:1">
+        <mat-grid-tile>
+          <mat-card class="value-card">
+            <mat-card-content>
+              <h3 class="mat-body-strong" style="text-align: left"><b>Wide Geographical Reach : </b></h3>
+              <h3 class="mat-body-strong" style="text-align: left">We supply to farmers across diverse geographical boundaries,
+                ensuring accessibility to our products for aquaculture practitioners globally.</h3>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="value-card">
+            <mat-card-content>
+              <h3 class="mat-body-strong" style="text-align: left"><b>Customized Formulations : </b></h3>
+              <h3 class="mat-body-strong" style="text-align: left">WOur expertise allows us to formulate probiotics tailored to specific
+                requirements, providing farmers with solutions optimized for their unique aquaculture needs.</h3>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="value-card-market">
+            <mat-card-content>
+              <h3 class="mat-body-strong" style="text-align: left"><b>Collaboration Across Varied Conditions : </b></h3>
+              <h3 class="mat-body-strong" style="text-align: left"> Our probiotic and feed supplement solutions are
+                adaptable to various Aquaculture environments, ensuring flexibility and effectiveness across
+                different production system.</h3>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-card class="value-card-market">
+            <mat-card-content>
+              <h3 class="mat-body-strong" style="text-align: left"><b>Versatility Across Fish Species : </b></h3>
+              <h3 class="mat-body-strong" style="text-align: left">Our probiotics are not limited to shrimp; they are effective for
+                various fish species, including Tilapia, Murrel, Sea bass and range of fresh water fish species. This
+                versatility reflects our commitments to supporting diverse Aquaculture operations.</h3>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
   </div>
   <br>
   <div class="footer-main">
@@ -105,16 +183,9 @@
             <div class="col-xs-12 col-sm-4 col-md-4 hotel-address" id="hotelAddress">
               <div>
                 <h4 class="block-margin font-class">MELBA BIOTECH</h4>
+                <br>
                 <h5 class="block-margin">
-                  <span class="footerAddress1">No, 5B</span>
-                  <span class="footerAddressComma1">{{ ", " }}</span>
-                  <span class="footerAddress2">M.D. Sitaraman Avenue</span>
-                </h5>
-                <h5 class="block-margin">
-                  <span class="footerAddress2">VGP Layout, Injambakkam</span>
-                </h5>
-                <h5 class="block-margin">
-                  <span class="footerZipcode">Chennai - 600115</span>
+                  <span style="font-size: 15px;">Email : info@maritech.in</span>
                 </h5>
               </div>
             </div>

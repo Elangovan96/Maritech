@@ -15,26 +15,17 @@
                             <h4 (click)="openClient()">
                                 <a style="letter-spacing: 1px;font-weight: 500;" class="fa fa-certificate"
                                     aria-hidden="true">
-                                    <span style="margin-right: 5px;"> </span>
+                                    <span style="margin-right: 2px;"> </span>
                                     HOME
                                 </a>
                             </h4>
                         </div>
                         <div class="menuItem">
-                            <h4 (click)="openAbout()">
-                                <a style="letter-spacing: 1px;font-weight: 500;" class="fa fa-certificate"
-                                    aria-hidden="true">
-                                    <span style="margin-right: 5px"> </span>
-                                    OUR VALUES
-                                </a>
-                            </h4>
-                        </div>
-                        <div class="menuItem">
-                            <h4 (click)="openCertificate()">
+                            <h4 (click)="openSolutions()">
                                 <a style="letter-spacing: 1px;font-weight: 500" class="fa fa-certificate"
                                     aria-hidden="true">
-                                    <span style="margin-right: 3px"> </span>
-                                    CERTIFICATES
+                                    <span style="margin-right: 2px"> </span>
+                                    SOLUTIONS
                                 </a>
                             </h4>
                         </div>
@@ -42,7 +33,7 @@
                             <h4 (click)="openContact()">
                                 <a style="letter-spacing: 1px;font-weight: 500;text-decoration: underline;"
                                     aria-hidden="true">
-                                    <span style="margin-right: 5px"> </span>
+                                    <span style="margin-right: 2px"> </span>
                                     CONTACT US
                                 </a>
                             </h4>
@@ -54,8 +45,16 @@
         </div>
     </div>
     <br>
-    <div>
+    <div class="contactData">
+    <div style="width: 100%;" >
         <mat-card class="value-card animated">
+            <div *ngIf=product class="certClass">
+                <h3 class="mat-body-strong" style="text-align: left"><b>Product : </b></h3>
+                <mat-form-field appearance="fill">
+                    <input matInput type="text" id="product" name="product" [(ngModel)]="product"
+                        required disabled />
+                </mat-form-field>
+            </div>
             <div class="certClass">
                 <h3 class="mat-body-strong" style="text-align: left"><b>Name : </b></h3>
                 <mat-form-field appearance="fill">
@@ -76,7 +75,7 @@
                 <h3 class="mat-body-strong" style="text-align: left"><b>Email Address : </b></h3>
                 <mat-form-field appearance="fill">
                     <input matInput type="email" id="email" name="email" [(ngModel)]="email"
-                        placeholder="example@domain.com" required />
+                        placeholder="example@domain.com" matNativeControl required />
                 </mat-form-field>
             </div>
             <br>
@@ -89,6 +88,15 @@
             </div>
             <br>
             <div class="certClass">
+                <h3 class="mat-body-strong" style="text-align: left"><b>Country : </b></h3>
+                <mat-form-field>
+                    <select [(ngModel)]="selectedCountry" placeholder="Select Country" matNativeControl required >
+                        <option *ngFor="let country of country" [value]="country.name">{{country.name}}</option>
+                    </select>
+                </mat-form-field>
+            </div>
+            <br>
+            <div class="certClass">
                 <h3 class="mat-body-strong" style="text-align: left"><b>Message : </b></h3>
                 <mat-form-field appearance="fill">
                     <textarea matInput type="message" id="message" name="message" [(ngModel)]="message"
@@ -96,10 +104,58 @@
                 </mat-form-field>
             </div>
             <br>
+            <br>
             <button class="loginBtn" style="margin-left: 5%" (click)="sendEmail()" color="primary" mat-raised-button>
                 <i aria-hidden="true" class="book-login"></i><span class="login-btn-text">Submit </span>
             </button>
-        </mat-card>    
+            <div *ngIf=product>
+
+            </div>
+           
+        </mat-card>   
+    </div>
+    <br>
+    <div style="width: 100%;">
+        <mat-card class="value-card-data">
+            <mat-card-content>
+              <h3 class="mat-body-strong" style="text-align: left"><b>PACKAGING : </b></h3>
+              <h3 class="mat-body-strong" style="text-align: left">Explore our meticulously packaged products designed for bulk orders. We prioritise quality packaging to ensure your items reach you in perfect condition, no matter the quantity.
+            </h3>
+            </mat-card-content>
+        </mat-card>
+        <br>
+          <mat-card class="value-card-data">
+            <mat-card-content>
+              <h3 class="mat-body-strong" style="text-align: left"><b>SHIPPER PACK : </b></h3>
+              <h3 class="mat-body-strong" style="text-align: left">Secure and reliable shipping is our commitment. Our specialised shipper packs are tailored for bulk orders, providing robust protection throughout the entire shipping process.
+            </h3>
+            </mat-card-content>
+          </mat-card>    
+          <br>
+          <mat-card class="value-card-data">
+            <mat-card-content>
+              <h3 class="mat-body-strong" style="text-align: left"><b>NO MINIMUM ORDER : </b></h3>
+              <h3 class="mat-body-strong" style="text-align: left">At Melba Biotech, we believe in flexibility. Enjoy the freedom to place bulk orders without any minimum quantity requirements. Whether you need a few items or a large consignment, we're here to meet your needs.
+            </h3>
+            </mat-card-content>
+          </mat-card>   
+          <br>
+          <mat-card class="value-card-data">
+            <mat-card-content>
+              <h3 class="mat-body-strong" style="text-align: left"><b>NO PRODUCT RETURN POLICY : </b></h3>
+              <h3 class="mat-body-strong" style="text-align: left">We regret to inform you that we do not accept returns for any products. All sales are final. Please carefully review your order before completing your purchase.
+            </h3>
+            </mat-card-content>
+          </mat-card>   
+          <br>
+          <mat-card class="value-card-data">
+            <mat-card-content>
+              <h3 class="mat-body-strong" style="text-align: left"><b>SAMPLE REQUEST : </b></h3>
+              <h3 class="mat-body-strong" style="text-align: left">You can request samples of our products to assess their quality and suitability for your needs. Please specify the products you are interested in, and any associated details such as quantity, shipping preferences, or specific requirements.
+            </h3>
+            </mat-card-content>
+          </mat-card>   
+    </div>
     </div>
     <br>
     <div class="footer-main">
@@ -112,16 +168,9 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 hotel-address" id="hotelAddress">
                   <div>
                     <h4 class="block-margin font-class">MELBA BIOTECH</h4>
+                    <br>
                     <h5 class="block-margin">
-                      <span class="footerAddress1">No, 5B</span>
-                      <span class="footerAddressComma1">{{ ", " }}</span>
-                      <span class="footerAddress2">M.D. Sitaraman Avenue</span>
-                    </h5>
-                    <h5 class="block-margin">
-                      <span class="footerAddress2">VGP Layout, Injambakkam</span>
-                    </h5>
-                    <h5 class="block-margin">
-                      <span class="footerZipcode">Chennai - 600115</span>
+                      <span style="font-size: 15px;">Email : info@maritech.in</span>
                     </h5>
                   </div>
                 </div>

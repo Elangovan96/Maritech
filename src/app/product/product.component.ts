@@ -1,6 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { Product } from './product';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product',
@@ -15,6 +16,7 @@ export class ProductComponent implements OnInit {
 
   constructor(
     public dialogRef: MatDialogRef<ProductComponent>,
+    public router: Router,
 
     @Inject(MAT_DIALOG_DATA) public productData: any
   ) {
@@ -36,7 +38,9 @@ export class ProductComponent implements OnInit {
   }
 
   sendEnquiry() {
-    
+    this.dialogRef.close();
+    this.router.navigate(['/Contact', {name: this.data.title }]);
+
     }
 
 }

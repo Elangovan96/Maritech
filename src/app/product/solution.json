@@ -1,0 +1,237 @@
+[
+    {
+        "solutionTitle":"PROBIOTIC SOLUTIONS FOR WATER QUALITY AND POND BOTTOM IMPROVEMENT",
+        "solutionData": [
+            "* Microbial balance and pathogen control.",
+            "* Water quality enhancement.",
+            "* Immune system support and stress reduction.",
+            "* Pond bottom rejuvenation."
+          ],
+          "productList": [
+            {
+                "title": "Bacimax ™",
+                "description": "Bacimax ™ is a new generation encapsulated probiotic combination for maintaining shrimp pond water quality and pond bottom.",
+                "dosage": "1 kg/acre",
+                "netWeight": "1000 gm",
+                "minQuantity":"10",
+                "functions": [
+                  "Promotes and maintains optimum water quality and reduces black soil in the pond bottom.",
+                  "Converts toxic waste and ammonia as nutrients for growth and maintains algal bloom.",
+                  "Regular use of bacimax promotes healthy pond bottom and improves overall shrimp health."
+                ],
+                "application": [
+                  "900 gm of Bacimax per acre at 1m water depth.",
+                  "Mix 900 gm of Bacimax in 5 ltr of clean water and spread evenly throughout the pond.",
+                  "Apply the product once in 7 days."
+                ],
+                "image": "assets/Bacimax.jpg",
+                "disclaimer":"Single Pack - 1000g (Shipper Pack / Standard Packing Quantity: 10 Packets).",
+                "flexibleOrder":"Order any quantity you desire - no minimums here!"
+
+              },
+              {
+                "title": "Bacimax Pro ™",
+                "description": "Bacimax Pro ™ is a highly concentrated encapsulated probiotic formulation for use in shrimp aquaculture for pond water quality, pond bottom maintenance and treatment.",
+                "dosage": "20 gm/acre",
+                "netWeight": "100 gm",
+                "minQuantity":"50",
+                "functions": [
+                  "Super high concentrated probiotic formulation.",
+                  "Maintains good water quality and pond bottom and regular usage reduces black soil formation and prevents ammonia build up.",
+                  "Provides optimum water quality to promote good shrimp health, growth and intern helps in good FCR.",
+                  "Concentrated product provides optimum function even used in smaller quantity applications."
+                ],
+                "application": [
+                  "Apply 20 gm per acre at 1m water depth. Mix 20gm of Bacimax pro in 5 ltr of clean water, mix the product well and apply evenly throughout the pond.",
+                  "Frequency of application once in 7 days."
+                ],
+                "image": "assets/BacimaxPro.jpg",
+                "disclaimer":"Single Pack - 100g (Shipper Pack / Standard Packing Quantity: 50 Packets).",
+                "flexibleOrder":"Order any quantity you desire - no minimums here!"              },
+              {
+                "title": "Melba PSB-L ™",
+                "description": "Melba PSB-L ™ is an improved high potent photosynthetic bacteria formulation specifically formulated by lyophilisation technology for us in shrimp aquaculture for pond water quality, pond bottom management and reduction of pond sludge.",
+                "dosage": "5 ltr/acre",
+                "netWeight": "5 ltr",
+                "minQuantity":"2",
+                "functions": [
+                  "Superior and highly effective photosynthetic bacteria formulation. Maintains optimum water quality and reduces pond bottom sludge.",
+                  "Decompose shrimp waste in the pond and reduces bad odour. Performs well under low DO conditions.",
+                  "Supports growth of other native beneficial bacteria in the pond."
+                ],
+                "application": [
+                  "<b>Regular Application </b>: Apply 1 Kg per acre at 1m water depth. Mix 1 kg of PSB-L in 1 Litre of water and spread evenly in the pond. No brewing needed. Apply once in 7 days.",
+                  "<b>Treatment Application </b>: Before stocking PL 3 days prior to stocking. Apply 2kg per acre at 1m water depth to promote healthy water quality.",
+                  "<b>Black soil Treatment during crop </b>: 2 kg per acre at 1m water depth for first application followed by 1kg per acre at 1m water depth after 7 days and continue with regular dosage of 1 kg once in 7 days.",
+                  "<b>After harvest </b>: Reduce pond water depth to 30cm and apply 2kg per acre as a first dosage followedby 2nd application of 2kg per acre after 5 days of first application."
+                ],
+                "image": "assets/MelbaPSB-L.jpg",
+                "disclaimer":"Single Pack - 5 ltr (Shipper Pack / Standard Packing Quantity: 2 containers).",
+                "flexibleOrder":"Order any quantity you desire - no minimums here!"
+              }
+          ]
+    },
+    {
+        "solutionTitle":"PROBIOTIC SOLUTION FOR VIBRIO CONTROL",
+        "solutionData": [
+            "* Natural defence against vibrio in Shrimp ponds.",
+            "* Limits proliferation of vibrio.",
+            "* Minimises growth of vibrio in shrimp ponds and water.",
+            "* Controls chatinoclastic vibrio during post mold conditions."
+          ],
+          "productList": [
+            {
+                "title": "Melba VB ™",
+                "description": "Melba VB ™ is a special formulation of probiotic strains to control vibrio in the shrimp ponds.",
+                "dosage": "1 kg/acre",
+                "netWeight": "1000 gm",
+                "minQuantity":"10",
+                "functions": [
+                  "Ideally suitable for regular application in pond to keep vibrio population in control.",
+                  "Improves pond smell and turbidity due to vibrio infection.",
+                  "Effective in protecting shrimps from inter and post molt vibrio infections.",
+                  "It improves shrimp health in the pond."
+                ],
+                "application": [
+                  "<b>Regular Application </b>: Mix 1 kg of Melba VB in 5 ltr of clean water and apply evenly throughout the pond. Apply evenly throughout the pond. Apply 1 kg per acre at 1 m water depth for regular application once in 7-10 days.",
+                  "<b>Treatment Application </b>: 1st Application : Mix 2 kg of Melba VB in 5 ltr of clean water and apply evenly throughout the pond. 2nd Application: 5 days after 1st application mix 2 kg of Melba VB in 5 ltr of clean water and apply evenly throughout the pond."
+                ],
+                "image": "assets/MelbaVB.jpg",
+                "disclaimer":"Single Pack - 1000g (Shipper Pack / Standard Packing Quantity: 10 Packets).",
+                "flexibleOrder":"Order any quantity you desire - no minimums here!"
+              }
+        ]
+    },
+    {
+        "solutionTitle":"AQUA FEED SUPPLEMENTS",
+        "solutionData": [
+            "* Healthy digestion for better growth.",
+            "* Stronger immune system and less stress.",
+            "* Better FCR .",
+            "* Control pathogenic bacteria growth in shrimp gut."
+          ],
+          "productList": [
+            {
+                "title": "Liv Yeast ™",
+                "description": "Liv Yeast ™ is a pure concentrated live yeast culture specifically formulated for feed supplement to get better growth and improve shrimp health.",
+                "dosage": "3-5 gm/kg of feed",
+                "netWeight": "4 kg",
+                "minQuantity":"5",
+                "functions": [
+                  "Protects shrimp intestinal epithelial wall and prevents pathogenic bacterial growth in the gut.",
+                  "As feed supplement, it improves shrimp gut health, better food absorption, better FCR and results in good growth.",
+                  "Improves shrimp immune system and disease resistance."
+                ],
+                "application": [
+                  "3-5 gm per kg of feed for all meals."
+                ],
+                "image": "assets/LivYeast.jpg",
+                "disclaimer":"Single Pack - 4kg (Shipper Pack / Standard Packing Quantity: 5 Packets).",
+                "flexibleOrder":"Order any quantity you desire - no minimums here!"
+              },
+              {
+                "title": "Melba Vitzyme ™",
+                "description": "Melba Vitzyme ™ is a specially formulated feed additive which provides excellent stress management nutrition for shrimp to handle variation of salinity, pH, Temperature and high organic load accumulation in pond.",
+                "dosage": "5 gm/kg of feed",
+                "netWeight": "500 gm",
+                "minQuantity":"22",
+                "functions": [
+                  "Melba vitzyme supports in shrimp for better calcium and phosphorus absorption of feed as well as water.",
+                  "Supports in post-molt shell thickening.",
+                  "Helps shrimp to withstand environmental stress, helps in better feed utilisation and FCR."
+                ],
+                "application": [
+                  "<b>Regular Dosage </b>: 5 gm per kg of feed x 2 meals per day all through the culture period. Treatment Dosage: in case of high salinity more than 40 ppt or low salinity less than 4 ppt, give 5 gm per kg of feed x all meals per day x 1 week."
+                ],
+                "image": "assets/MelbaVitzyme.jpg",
+                "disclaimer":"Single Pack - 500g (Shipper Pack / Standard Packing Quantity: 22 Packets).",
+                "flexibleOrder":"Order any quantity you desire - no minimums here!"
+              },
+              {
+                "title": "Merry Gut ™",
+                "description": "Merry Gut ™ is a high quality gut probiotic to be used as feed top coat in shrimp.",
+                "dosage": "3 gm/kg of feed",
+                "netWeight": "500 gm",
+                "minQuantity":"22",
+                "functions": [
+                  "Improves shrimp gut health, better feed utilisation and FCR.",
+                  "Prevents colonization of pathogenic vibrio in shrimp gut."
+                ],
+                "application": [
+                  "Add 3 gm/kg of feed to mixed with required quantity along with Melba Flinka gel, shade dry the feed and broadcast.",
+                  "Recommended to use Merry gut in all meals."
+                ],
+                "image": "assets/Merrygut.jpg",
+                "disclaimer":"Single Pack - 500g (Shipper Pack / Standard Packing Quantity: 22 Packets).",
+                "flexibleOrder":"Order any quantity you desire - no minimums here!"
+              },
+              {
+                "title": "Cheer Max ™",
+                "description": "Cheer Max ™ is a specially formulated feed supplement to provide high immune strength to the shrimp.",
+                "dosage": "5 gm/kg of feed",
+                "netWeight": "500 gm",
+                "minQuantity":"22",
+                "functions": [
+                  "Formulation combines various forms of vitamins, trace minerals and special immunostimulants.",
+                  "Provides excellent hepatopancreatic health and detoxification.",
+                  "Provides natural defence against disease causing pathogens and protection of hepatopancreas."
+                ],
+                "application": [
+                  "<b>Regular Dosage </b> : 5 gm per Kg of feed x 2 meals per day.",
+                  "<b>Treatment Dosage </b> : 5 gm per kg of feed x all meals x 7 days."
+                ],
+                "image": "assets/CheerMax.jpg",
+                "disclaimer":"Single Pack - 500g (Shipper Pack / Standard Packing Quantity: 22 Packets).",
+                "flexibleOrder":"Order any quantity you desire - no minimums here!"
+            },
+            {
+              "title": "Machigut ™",
+              "description": "Machigut ™ is an encapsulated gut probiotic formulation specifically for use in fish farming for improving fish health and better growth.",
+              "dosage": "2-3 gm/kg of feed",
+              "netWeight": "1000 gm",
+              "minQuantity":"10",
+              "functions": [
+                "Prevents bacterial and viral infections in fish gut.",
+                "Improves FCR and body growth by better feed absorption with regular use of machigut.",
+                "Improve overall fish health and provides resistance against diseases."
+              ],
+              "application": [
+                "2-3 gm per kg of feed for all meals."
+              ],
+              "image": "assets/Machigut.jpg",
+              "disclaimer":"Single Pack - 1000g (Shipper Pack / Standard Packing Quantity: 10 Packets).",
+              "flexibleOrder":"Order any quantity you desire - no minimums here!"
+          }
+        ]
+    },
+    {
+        "solutionTitle":"FEED ADJUVANT",
+        "solutionData": [
+            "* Digestive health and nutrient absorption.",
+            "* Disease resistance and stress reduction.",
+            "* Enhanced feed palatability."
+          ],
+          "productList": [
+            {
+            "title": "Flinka Gel ™ ",
+            "description": "Flinka Gel ™  is a 2-in-1 formula providing excellent binding capability for feed top coat and with additional nutrients.",
+            "dosage": "10-20 gm/kg of feed",
+            "netWeight": "5 ltr",
+            "minQuantity":"2",
+            "functions": [
+              "Enriched multi vitamins, nutrients and binding molecules facilitating good binding capability and provides nutrition to shrimp.",
+              "Contains natural attractants such as fish hydrolysate and squid oil.",
+              "Provides excellent binding capability facilitating bio- availability and absorption of feed supplements coated over the feed.",
+              "Compliments the function of prebiotics, probiotics, vitamins etc., used as feed top coat."
+            ],
+            "application": [
+              "For every kg of feed, use 10 - 20 gm of gel by dissolving it in small quantity of water and mix it in the feed along with the feed top coat products."
+            ],
+            "image": "assets/FlinkaGel.jpg",
+            "disclaimer":"Single Pack - 5 ltr (Shipper Pack / Standard Packing Quantity: 2 containers).",
+            "flexibleOrder":"Order any quantity you desire - no minimums here!"
+          }
+        ]
+    }
+    
+]

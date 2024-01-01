@@ -7,4 +7,6 @@ export interface Product {
   application: String[];
   image: String;
   minQuantity: String;
+  disclaimer: String;
+  flexibleOrder: String;
 }

@@ -1,0 +1,123 @@
+<div [ngClass]="{ 'add-blur' : blurData }" style="overflow-x: hidden;">
+    <div class="container-fluid appHeader">
+        <div class="banner-header" id="banner-header"
+          style="background: url('assets/bannerImage.png') no-repeat center center , #bcbcbc">
+        </div>
+        <div class="logowrapper col-5 col-sm-5 col-md-3 col-lg-3 col-xl-3">
+          <img class="animated fadeInDown headerLogo" alt="logo" src="assets/logo.png" (click)="openClient()" />
+        </div>
+        <div class="container-fluid headerSubMenu" style="overflow-y: hidden;">
+            <div class="row">
+              <div class="col-xl-12">
+                <div style="text-align: center">
+                  <div class="animated fadeInDown">
+                    <div class="menuItem">
+                      <h4 (click)="openClient()">
+                        <a style="letter-spacing: 1px;font-weight: 500;" class="fa fa-certificate" aria-hidden="true">
+                            <span style="margin-right: 5px;"> </span>
+                           HOME
+                        </a>
+                      </h4>
+                    </div>
+                    <div class="menuItem">
+                      <h4 (click)="openSolution()">
+                        <a style="letter-spacing: 1px;font-weight: 500;text-decoration: underline;" class="fa fa-certificate" aria-hidden="true">
+                            <span style="margin-right: 5px"> </span>
+                          SOLUTIONS
+                        </a>
+                      </h4>
+                    </div>
+                    <div class="menuItem">
+                      <h4 (click)="openContact()">
+                        <a style="letter-spacing: 1px;font-weight: 500;" class="fa fa-certificate" aria-hidden="true">
+                          <span style="margin-right: 5px"> </span>
+                           CONTACT US
+                        </a>
+                      </h4>
+                    </div>
+                    <hr>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div *ngFor="let solution of solutions">
+  
+  <div class="row">
+    <div class="col-xl-12" style="text-align:center">
+      <h2>
+        {{solution.solutionTitle}}
+      </h2>
+    </div>
+  </div>
+  <div style="padding-left: 30px;">
+    <div class="value-card">
+      <mat-card-content>
+        <div *ngFor="let data of solution.solutionData">
+          <h3 class="mat-body-strong" style="text-align: left">{{data}}</h3>
+        </div>
+      </mat-card-content>
+    </div>
+  </div>
+  <br>
+  <mat-grid-list cols={{wid}} #grid rowHeight="430px" gutterSize="15px">
+    <mat-grid-tile *ngFor="let product of solution.productList">
+      <mat-card class="offersCard animated" style="cursor: pointer;" (click)="viewDetails(product)">
+        <img mat-card-image class="image-height" alt="products" src="{{product.image}}">
+        <mat-card-title style="font-style: inherit;font-size: large;">
+          {{product.title}}
+        </mat-card-title>
+        <mat-card-content>
+          <span> Dosage : </span>
+          <span style="font-weight: 500;">{{ product.dosage }} </span>
+          <br>
+          <span> Net Weight : </span>
+          <span style="font-weight: 500;"> {{ product.netWeight }} </span>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <br>
+  <mat-divider></mat-divider>
+  <br>
+</div>
+<div class="row">
+  <div class="col-xl-12" style="text-align:center">
+    <h2>
+      INNOVATION AND DEVELOPMENT.
+    </h2>
+  </div>
+</div>
+<div style="padding-left: 30px;">
+  <div class="value-card">
+    <mat-card-content>
+        <h3 class="mat-body-strong" style="text-align: left">* We specialize in developing custom formulated probiotics and feed supplements tailored to specific customer needs.</h3>
+        <h3 class="mat-body-strong" style="text-align: left">* We offer guidance on shrimp and pond management and address various requirements through the application of probiotics.</h3>
+        <h3 class="mat-body-strong" style="text-align: left">* We offer guidance in shrimp and pond management including pathogenic vibrio management by addressing various requirements in applications of probiotics.</h3>
+        <h3 class="mat-body-strong" style="text-align: left">* Our in-house Aquaculture and bio technology expertise have good networking with research institutes enable us to continuously enhance product formulation for optimal performance in Aquaculture.</h3>
+    </mat-card-content>
+  </div>
+</div>
+<div class="footer-main">
+    <div class="ng-star-inserted">
+      <!---->
+      <nav class="navbar navbar-default book-footer navbar-fixed-bottom ng-star-inserted" id="footerItem"
+        role="navigation">
+        <div class="container-fluid">
+          <div class="row rowfullwidth">
+            <div class="col-xs-12 col-sm-4 col-md-4 hotel-address" id="hotelAddress">
+              <div>
+                <h4 class="block-margin font-class">MELBA BIOTECH</h4>
+                <br>
+                <h5 class="block-margin">
+                  <span style="font-size: 15px;">Email : info@maritech.in</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>

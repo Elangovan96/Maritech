@@ -3,7 +3,7 @@
     <h2 class="name offerCardName room_name  float-left">{{ data.title }}
       <span style="float: right;cursor: pointer;" (click)="closeModal()">X</span>
       <button class="loginBtn" style="float: right;margin-right: 5%;" (click)="sendEnquiry()" color="primary" mat-raised-button>
-        <i aria-hidden="true" class="book-login"></i><span class="login-btn-text">ENQUIRY </span>
+        <i aria-hidden="true" class="book-login"></i><span class="login-btn-text">ORDER </span>
     </button>
     </h2>
   </div>
@@ -17,8 +17,14 @@
       <div>
         <mat-card class="value-card">
           <mat-card-content>
-            <h5 class="offerCardParagraph" style="font-family: 'Times New Roman', Times, serif;"
-              [innerHTML]="data.description"></h5>
+            <h3 class="mat-body-strong" style="text-align: left;font-style: italic;line-height: 20px;"><b>Disclaimer : </b> {{data.disclaimer}}</h3>
+            <h3 class="mat-body-strong" style="text-align: left;font-style: italic;line-height: 20px;"><b>Flexible Ordering : </b> {{data.flexibleOrder}}</h3>
+          </mat-card-content>
+        </mat-card>
+        <br>
+        <mat-card class="value-card">
+          <mat-card-content>
+              <h3 class="mat-body-strong" style="text-align: left">{{data.description}}</h3>
           </mat-card-content>
         </mat-card>
       </div>
@@ -26,7 +32,7 @@
         <div class="container-fluid">
           <ul class="row">
             <li class="panel-offer-detail-li col-6 col-sm-6 col-md-4 col-lg-4">
-              <span style="font-size: 30px" class="book-check-in"></span>
+              <span style="font-size: 50px" class="book-check-in"></span>
               <p style="margin-top: 10px"> Dosage </p>
               <strong>
                 <p style="font-weight: 900">
@@ -60,7 +66,8 @@
           <mat-card-content>
             <h3 class="mat-body-strong" style="font-weight: bold ">Functions : </h3>
             <div *ngFor="let function of data.functions">
-              <h5 class="offerCardParagraph" [innerHTML]="function"></h5>
+              <h3 class="mat-body-strong" [innerHTML]="function"></h3>
+
             </div>
           </mat-card-content>
         </mat-card>
@@ -71,7 +78,7 @@
           <mat-card-content>
             <h3 class="mat-body-strong" style="font-weight: bold ">Application and Dosage : </h3>
             <div *ngFor="let application of data.application">
-              <h5 class="offerCardParagraph" [innerHTML]="application"></h5>
+              <h3 class="mat-body-strong" [innerHTML]="application"></h3>
             </div>
           </mat-card-content>
         </mat-card>

@@ -15,6 +15,16 @@
   height: auto;
 }
 
+.value-card {
+  max-width: 80%;
+  max-height: 80%;
+  background-color: white;
+}
+
+.contactData{
+  flex-direction: row;
+}
+
 .menuItem {
   display: inline-flex;
   align-items: center;
@@ -212,7 +222,11 @@
   .value-card {
     max-width: 80%;
     max-height: 80%;
-    background-color: rgb(35, 48, 88);
+  }
+
+  .value-card-market {
+    max-width: 80%;
+    max-height: 100%;
   }
 
   .aboutImg {
@@ -236,7 +250,7 @@
 
 
   .footer-main {
-    height: 150px;
+    height: 120px;
     background-color: black
   }
   
